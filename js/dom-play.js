@@ -14,4 +14,4 @@
 
 */
 
-document.querySelector(".hamlet").style.backgroundColor = "pink"
+//document.querySelector(".hamlet").style.backgroundColor = "pink"
