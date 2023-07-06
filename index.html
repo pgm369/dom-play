@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Title Goes Here</title>
+     <title>DOM Play Assignment</title>
   <meta charset="utf-8" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width" />
+  <meta name=" description" content= "DESSCRIPTION" > 
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
 
@@ -23,7 +24,7 @@
  </head>
  <body>
      <header>
-     <h1>Mean Girls Script</h1>
+        <h1 class="page-header">Mean Girls Script</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
             <!--<a href="#" target="_blank">Name of project goes here</a> 
@@ -32,6 +33,9 @@
      </header>
      
    <main class="wrapper">
+        <h3 class="subheader">I have created a JavaScript page for a single-page application that serves as a tablet interface for actors rehearsing a play based on Mean Girls. The application allows actors to touch their characters' names on the tablet to highlight their lines and un-highlight lines from other actors. It can handle any number of actors and lines and updates dynamically without reloading the page. The code utilizes the DOM and provides a user-friendly experience for efficient rehearsals.</h3>
+
+        <h2 class="subheader">The Shopping Scene!</h2>
     <div id="play">
         <p><span data-actor="regina">Regina: Get in, loser. We're going shopping.</span></p>
         <p><span data-actor="cady">Cady: Regina's like the barbie doll I never had. I'd never seen anybody so glamorous.</span></p>
@@ -42,14 +46,18 @@
     </div>
 
      <footer>
-      <p><small>&copy; 2021 by 
-          Priscila Garcia-Mendoza, All Rights Reserved ~ 
-          <a id="html-checker" href="#">Check HTML</a> ~ 
-          <a id="css-checker" href="#">Check CSS</a></small>
-     </p>
+        <p><small>&copy; 2021-<span id="this-year"></span> by
+            Priscila Garcia-Mendoza, All Rights Reserved ~
+            <a id="html-checker" href="#" target="_blank">Check HTML</a> ~
+            <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
+        </p>
     </footer>
   </main>
   <script src="js/main.js"></script>
   <script src="js/dom-play.js"></script>
+  <script>   
+    let d = new Date(); let thisYear = d.getFullYear();
+    document.getElementById("this-year").innerHTML = thisYear;
+  </script>
  </body>
 </html>

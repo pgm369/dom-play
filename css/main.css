@@ -1,10 +1,10 @@
 /* Global rules */
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Caprasimo&family=Playfair+Display:wght@700&display=swap');
 
 html {
     background-color: #f699cd;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Caprasimo', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
 }
@@ -13,6 +13,11 @@ html {
     color: #000; 
     background: #ffe6ee;
 }
+
+h1.page-header {
+    font-family: 'Caprasimo', sans-serif;
+}
+
 
 h1 {
     font-weight: normal;
@@ -30,7 +35,12 @@ p {
     margin: 1em; /* Top Right Bottom Left (TRBL) */
 }
 
+h2.subheader {
+    font-family: 'Caprasimo', sans-serif;
+}
+
 h2,h3 {
+    font-family: 'Agdasima', sans-serif;
     font-weight: normal;
     margin-left: 1em;
     line-height: 1em;
